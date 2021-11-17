@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RewardActivity">
+
+    <TextView
+        android:id="@+id/reward_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:textSize="30sp"
+        android:text="Rewards"
+        android:layout_margin= "10dp"/>
+
+    <ImageView
+        android:id="@+id/image_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <TextView
+    android:id="@+id/count"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/image_reward"
+    app:layout_constraintVertical_bias="0.0"
+    android:text="11000 steps"
+    android:textAlignment="center"
+    android:textSize="@dimen/header_text_size"
+    android:textColor="@color/black"
+    android:layout_margin= "10dp"/>
+
+    <TextView
+        android:id="@+id/text_appreciation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/count"
+        app:layout_constraintVertical_bias="0.0"
+        android:text="You set a new record for the highest step count. Amazing!"
+        android:textAlignment="center"
+        android:textSize="@dimen/header_text_size"
+        android:textColor="@color/black"
+        android:layout_margin= "10dp"/>
+
+
+    <TextView
+        android:id="@+id/active_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:padding="20dp"
+        android:text="Active Steps"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reward_text_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="957 steps"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/active_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/reward_text_title"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 hr 25 mins"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/image_reward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/active_steps"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <TextView
+        android:id="@+id/active_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Active Time"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/image_reward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/active_steps"
+        app:layout_constraintVertical_bias="0.054" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

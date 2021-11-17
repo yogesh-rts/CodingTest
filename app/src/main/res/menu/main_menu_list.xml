@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        app:showAsAction="never"
+        android:title="@string/menu_settings_action">
+    </item>
+
+    <item
+        android:id="@+id/action_set_goal"
+        app:showAsAction="never"
+        android:title="@string/set_your_personal_goal">
+    </item>
+
+
+    <item
+        android:id="@+id/action_rewards"
+        app:showAsAction="never"
+        android:title="@string/Rewards">
+    </item>
+
+</menu>

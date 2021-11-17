@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolbarTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/material_blue_grey_900</item>
+        <item name="colorPrimaryDark">@color/tool_bar_color</item>
+        <item name="android:background">@color/tool_bar_color</item>
+
+
+    </style>
+
+</resources>
