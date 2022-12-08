@@ -18,8 +18,10 @@ pipeline {
                     branch 'main';
                 }
             }
-            script {
-            sh './gradlew assemble'
+            steps {
+                script {
+                  sh './gradlew assemble'
+                }
             }
         }
     }
